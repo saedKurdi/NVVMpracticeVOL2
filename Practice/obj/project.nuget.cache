@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "q0Nh6b5SiQYTfG7rIVR311vLYVE+Q3E42bMn6MsqZdr18dSyjYOVpxGQXHdVQ9qDPCHG8oijuRXYaOpMW4+0yw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\source\\repos\\Practice\\Practice\\Practice.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}

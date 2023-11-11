@@ -1,0 +1,79 @@
+﻿<Page x:Class="Practice.Views.Pages.AddUserPageView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practice.Views.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Title="AddUserPageView">
+
+    <Grid Background="White">
+        <StackPanel Width="500" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label FontSize="18" Content="Name" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0 0 10 0"/>
+                <TextBox Text="{Binding User.name, UpdateSourceTrigger=PropertyChanged}"    FontSize="18" Width="400" HorizontalContentAlignment="Right"
+                         materialDesign:HintAssist.Hint="Enter Name"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label FontSize="14" Content="Username" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0 0 10 0"/>
+                <TextBox Text="{Binding User.username, UpdateSourceTrigger=PropertyChanged}"  FontSize="18" Width="400" HorizontalContentAlignment="Right"
+                         materialDesign:HintAssist.Hint="Enter Username"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label FontSize="18" Content="Email" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0 0 10 0"/>
+                <TextBox Text="{Binding User.email, UpdateSourceTrigger=PropertyChanged}"  FontSize="18" Width="400" HorizontalContentAlignment="Right"
+                         materialDesign:HintAssist.Hint="Enter Email"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label FontSize="18" Content="Street" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0 0 10 0"/>
+                <TextBox Text="{Binding User.address.street, UpdateSourceTrigger=PropertyChanged}"  FontSize="18" Width="400" HorizontalContentAlignment="Right"
+                         materialDesign:HintAssist.Hint="Enter Street"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label FontSize="18" Content="City" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0 0 10 0"/>
+                <TextBox Text="{Binding User.address.city, UpdateSourceTrigger=PropertyChanged}" FontSize="18" Width="400" HorizontalContentAlignment="Right"
+                         materialDesign:HintAssist.Hint="Enter City"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label FontSize="17" Content="Website" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0 0 10 0"/>
+                <TextBox Text="{Binding User.website, UpdateSourceTrigger=PropertyChanged}" FontSize="18" Width="400" HorizontalContentAlignment="Right"
+                         materialDesign:HintAssist.Hint="Enter Website"/>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label FontSize="17" Content="C:Name" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0 0 10 0"/>
+                <TextBox Text="{Binding User.company.name, UpdateSourceTrigger=PropertyChanged}"  FontSize="18" Width="400" HorizontalContentAlignment="Right"
+                         materialDesign:HintAssist.Hint="Enter Company Name"/>
+            </StackPanel>
+
+
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Label FontSize="17" Content="C:Bs" Width="70" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0 0 10 0"/>
+                <TextBox Text="{Binding User.company.bs,UpdateSourceTrigger=PropertyChanged}" FontSize="18" Width="400" HorizontalContentAlignment="Right"
+                         materialDesign:HintAssist.Hint="Enter Company BS"/>
+            </StackPanel>
+
+
+            <Button Command="{Binding SaveCommand}" Width="150" Content="SAVE"/>
+        </StackPanel>
+
+        
+        <Button Command="{Binding BackCommand}" Content="BACK" VerticalAlignment="Top" Width="70" Margin="10 10 0 0" HorizontalAlignment="Left"/>
+
+    </Grid>
+</Page>
